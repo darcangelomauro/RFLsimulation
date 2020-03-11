@@ -24,8 +24,8 @@ fi
 # Define some variables
 SEED_LVL0=$1
 HERE=$PWD
-PATH_MAIN=$HERE/../RFLmain
-PATH_RFL=$HERE/../RFL
+PATH_MAIN=/gpfs01/home/pmxmd10/RFLmain
+PATH_RFL=/gpfs01/home/pmxmd10/RFL
 WORK_PATH=$HERE/$2
 INIT_FILE=$WORK_PATH/init.txt
 G2_FILE=$WORK_PATH/g2_val.txt
