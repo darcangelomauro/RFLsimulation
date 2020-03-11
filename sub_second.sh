@@ -15,4 +15,4 @@ cd /gpfs01/home/pmxmd10/RFLmain/simulation
 
 # Start simulation
 SEED=$((SEED_LVL1 + SLURM_ARRAY_TASK_ID))
-./second $SEED $G2 $WORK_DIR $SLURM_ARRAY_TASK_ID
+./second $SEED $G2_VAL $WORK_DIR $SLURM_ARRAY_TASK_ID

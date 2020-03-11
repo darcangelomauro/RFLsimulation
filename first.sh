@@ -113,7 +113,7 @@ do
 	SEED_LVL1=$((SEED_LVL0+COUNTER*JOB_NUM))
 	
 	# Submit job
-	sbatch --export=SEED=$SEED_LVL1,G2=$G2_VAL,WORK_PATH=$WORK_PATH sub_first.sh
+	sbatch --export=SEED_LVL1,G2_VAL,WORK_PATH sub_first.sh
 
 	# Increment counter
 	COUNTER=$((COUNTER+1))
