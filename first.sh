@@ -67,7 +67,9 @@ do
 	JOB_NUM=$((JOB_NUM+1))
 done < $JOB_FILE
 
-
+# Create output directories in work directory
+mkdir $WORK_PATH/out_first
+mkdir $WORK_PATH/out_second
 
 # Create log file in work directory containing
 # all necessary data to replicate simulation
@@ -113,7 +115,7 @@ do
 	SEED_LVL1=$((SEED_LVL0+COUNTER*JOB_NUM))
 	
 	# Submit job
-	sbatch --export=SEED_LVL1,G2_VAL,WORK_PATH sub_first.sh
+	sbatch --export=SEED=$SEED_LVL1,G2=$G2_VAL,WORK_PATH=$WORK_PATH sub_first.sh
 
 	# Increment counter
 	COUNTER=$((COUNTER+1))

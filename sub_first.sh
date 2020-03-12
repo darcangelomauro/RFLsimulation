@@ -15,5 +15,7 @@ cd /gpfs01/home/pmxmd10/RFLmain/simulation
 module load armadillo-uon/intel2017/9.500.2
 module load gsl-uon/intel2017/2.5
 
+echo $SEED $G2 $WORK_PATH
+
 # Start simulation
-./first $SEED_LVL1 $G2_VAL $WORK_DIR
+./first $SEED $G2 $WORK_PATH

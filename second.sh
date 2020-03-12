@@ -85,7 +85,7 @@ do
 	SEED_LVL1=$((SEED_LVL0+COUNTER*JOB_NUM))
 	
 	# Submit job array
-	sbatch --array=$JOB_STRING --export=SEED_LVL1,G2_VAL,WORK_PATH sub_second.sh
+	sbatch --array=$JOB_STRING --export=SEED_LVL1=$SEED_LVL1,G2=$G2_VAL,WORK_PATH=$WORK_PATH sub_second.sh
 
 	# Increment counter
 	COUNTER=$((COUNTER+1))
