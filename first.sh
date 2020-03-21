@@ -70,6 +70,7 @@ done < $JOB_FILE
 # Create output directories in work directory
 mkdir $WORK_PATH/out_first
 mkdir $WORK_PATH/out_second
+mkdir $WORK_PATH/observables
 
 # Create log file in work directory containing
 # all necessary data to replicate simulation
