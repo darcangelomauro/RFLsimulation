@@ -16,5 +16,6 @@ cd /gpfs01/home/pmxmd10/RFLmain/simulation
 # Start simulation
 SEED=$((SEED_LVL1 + SLURM_ARRAY_TASK_ID))
 echo $SEED $G2 $WORK_PATH $SLURM_ARRAY_TASK_ID
-echo $SLURMD_NODENAME
 ./second $SEED $G2 $WORK_PATH $SLURM_ARRAY_TASK_ID
+echo "node: "
+echo $SLURMD_NODENAME

@@ -16,7 +16,8 @@ module load armadillo-uon/intel2017/9.500.2
 module load gsl-uon/intel2017/2.5
 
 echo $SEED $G2 $WORK_PATH
-echo $SLURMD_NODENAME
 
 # Start simulation
 ./first $SEED $G2 $WORK_PATH
+echo "node: "
+echo $SLURMD_NODENAME
