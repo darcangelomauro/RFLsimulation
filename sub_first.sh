@@ -3,8 +3,8 @@
 #SBATCH --partition=defq
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --mem=50m
-#SBATCH --time=20:00:00
+#SBATCH --mem=100m
+#SBATCH --time=60:00:00
 
 
 # Enter main directory

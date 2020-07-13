@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=100m
-#SBATCH --time=74:00:00
+#SBATCH --time=150:00:00
 
 # Load modules
 module load armadillo-uon/intel2017
